@@ -37,6 +37,20 @@
   </ol>
   <div id="article">
       <input type="button" value="night" onclick="
+        //만약 이 버튼의 value값이 night라면 밤 색깔나오고 버튼은 day로 바뀌고 
+        //버튼의 value값이 day라면 낮 색깔나오고 버튼은 night로 바뀌게 하라.
+        if(this.value === 'night'){
+         document.querySelector('body').style.backgroundColor = 'gray';
+         document.querySelector('body').style.color = 'white';
+         this.value = 'day';
+        } else{
+         document.querySelector('body').style.backgroundColor = 'white';
+         document.querySelector('body').style.color = 'gray';
+         this.value = 'night';
+        }
+        
+        ">
+      <input type="button" value="night" onclick="
          document.querySelector('body').style.backgroundColor = 'gray';
          document.querySelector('body').style.color = 'white';
       ">
@@ -44,7 +58,7 @@
          document.querySelector('body').style.backgroundColor = 'yellow';
          document.querySelector('body').style.color = 'gray';
       ">
-      <h2>HTML</h2>
+      <h2>Database</h2>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ipsam ut minima sequi earum voluptatem excepturi quia corrupti nisi quas quaerat odit blanditiis praesentium illo, assumenda provident doloribus dolorum voluptatum!
   </div>
   </div>
